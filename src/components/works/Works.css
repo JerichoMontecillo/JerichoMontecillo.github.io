@@ -1,0 +1,93 @@
+#works {
+    min-height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.worksTitle {
+    margin: 0.5rem 0;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.worksDescription {
+    font-size: 1rem;
+    font-weight: 400;
+    max-width: 45rem;
+}
+
+.worksSet {
+    margin: 1.5rem;
+    width: 100vw;
+    max-width: 80%;
+    text-align: left;
+}
+
+.workBar {
+    background: rgb(107, 104, 107);
+    display: flex;
+    margin: 1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+}
+
+.workBarImage {
+    object-fit: cover;
+    height: 3.5rem;
+    width: 3.5rem;
+    margin-right: 2rem;
+}
+
+.workBarText {
+    color: white;
+}
+
+.workBarText>p {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.workBar:hover {
+    opacity: 60%;
+}
+
+.workButton {
+    margin: 2rem 0;
+    padding: 0.5rem 2.5rem;
+    border: none;
+    background: white;
+    border-radius: 2rem;
+    font-size: 1rem;
+}
+
+.workButton:hover {
+    opacity: 60%;
+}
+
+@media screen and (max-width:720px) {
+    .workBarText>p {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .workBarText>p {
+        font-size: 3vw;
+    }
+
+    .workBarImage {
+        height: 2.25rem;
+        width: 2.25rem;
+    }
+
+    .workBarText>h2 {
+        font-size: 5vw;
+    }
+}
